@@ -1,0 +1,76 @@
+$baseGreen:#8CBF3F;
+$basePurple:#9453A6;
+$baseYellow:#F2CC0F;
+$baseGray:#F2F2F2;
+$baseBlack:#0D0D0D;
+$baseSize:15px;
+$baseWidth:30%;
+
+//Fonts for Headlines
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+/* font-family: 'Pattaya', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&display=swap');
+/* font-family: 'Henny Penny', cursive; */
+
+//Font for Text
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto:wght@100&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+.cform {
+    max-width: 420px;
+    margin: 50px auto;
+}
+
+.cform h2 {
+    background-color: rgba($color: #F2CC0F, $alpha: 0.8);
+    border-radius: 8px;
+}
+
+.feedback-input {
+    color: $baseBlack;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: $baseSize;
+    border-radius: 5px;
+    line-height: 22px;
+    /* background-color: transparent; */
+    border: 2px solid $basePurple;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid $baseGreen;
+}
+
+.cform textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+.cform [type="submit"] {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    background-color: $basePurple;
+    color: $baseGray;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+}
+
+.cform [type="submit"]:hover {
+    background-color: $baseGray;
+    color: $basePurple;
+}
